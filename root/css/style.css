@@ -1,0 +1,290 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0b111b;
+    color: #e2eaf4;
+    font-family: "Segoe UI", "Meiryo", sans-serif;
+}
+
+/* HEADER */
+
+header {
+    height: 65px;
+    background: #111c2b;
+    border-bottom: 1px solid #26374b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #36b8c9;
+}
+
+.system-status {
+    color: #8fa3b9;
+    font-size: 12px;
+}
+
+.status-light {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #35d58a;
+    border-radius: 50%;
+    margin-right: 7px;
+}
+
+/* LAYOUT */
+
+.layout {
+    display: flex;
+    min-height: calc(100vh - 110px);
+}
+
+/* SIDEBAR */
+
+aside {
+    width: 210px;
+    flex-shrink: 0;
+    background: #101a29;
+    border-right: 1px solid #26374b;
+    padding: 25px 15px;
+}
+
+aside h3 {
+    font-size: 12px;
+    color: #657b95;
+    margin-bottom: 20px;
+}
+
+aside a {
+    display: block;
+    padding: 13px;
+    margin-bottom: 6px;
+    color: #9eafc2;
+    text-decoration: none;
+    font-size: 13px;
+    border-radius: 4px;
+}
+
+aside a:hover,
+aside a.active {
+    background: #1d3448;
+    color: #43c7d5;
+}
+
+/* MAIN */
+
+main {
+    flex: 1;
+    padding: 35px;
+    min-width: 0;
+}
+
+.welcome {
+    border-bottom: 1px solid #26374b;
+    padding-bottom: 25px;
+}
+
+.subtitle {
+    color: #38b9ca;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.welcome h1 {
+    font-size: 30px;
+    margin: 12px 0;
+}
+
+.welcome p:last-child {
+    color: #8295aa;
+    font-size: 14px;
+}
+
+/* SEARCH */
+
+.search-area {
+    margin: 25px 0 15px;
+}
+
+.search-area input {
+    width: 100%;
+    padding: 14px;
+    background: #121f30;
+    border: 1px solid #30445a;
+    border-radius: 4px;
+    color: white;
+    outline: none;
+}
+
+.search-area input:focus {
+    border-color: #36b8c9;
+}
+
+/* CATEGORY */
+
+.category {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 35px;
+}
+
+.category button {
+    padding: 9px 22px;
+    background: #142235;
+    color: #9eafc2;
+    border: 1px solid #30445a;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.category button:hover,
+.category button.selected {
+    background: #174253;
+    color: #48d2df;
+    border-color: #36b8c9;
+}
+
+/* DATABASE */
+
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.section-title h2 {
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+.section-title span {
+    color: #71869e;
+    font-size: 12px;
+}
+
+.diagram-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 15px;
+}
+
+.diagram-card {
+    background: #121f30;
+    border: 1px solid #2a3c50;
+    padding: 18px;
+    border-radius: 4px;
+    transition: border-color 0.2s;
+}
+
+.diagram-card:hover {
+    border-color: #36b8c9;
+}
+
+.diagram-type {
+    color: #40c4d2;
+    font-size: 11px;
+    margin-bottom: 12px;
+}
+
+.diagram-card h3 {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.diagram-card p {
+    color: #91a3b7;
+    font-size: 12px;
+    line-height: 2;
+}
+
+.diagram-card a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #43c7d5;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+/* ABOUT */
+
+.about {
+    margin-top: 45px;
+    padding: 22px;
+    background: #111c2b;
+    border: 1px solid #26374b;
+}
+
+.about h2 {
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.about p {
+    color: #91a3b7;
+    font-size: 13px;
+    line-height: 2;
+}
+
+/* FOOTER */
+
+footer {
+    height: 45px;
+    background: #101a29;
+    border-top: 1px solid #26374b;
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #647991;
+    font-size: 10px;
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+    header {
+        padding: 0 12px;
+    }
+
+    .logo {
+        font-size: 13px;
+    }
+
+    aside {
+        width: 115px;
+        padding: 20px 8px;
+    }
+
+    aside a {
+        font-size: 10px;
+        padding: 10px 5px;
+    }
+
+    main {
+        padding: 20px 12px;
+    }
+
+    .welcome h1 {
+        font-size: 21px;
+    }
+
+    .diagram-list {
+        grid-template-columns: 1fr;
+    }
+}

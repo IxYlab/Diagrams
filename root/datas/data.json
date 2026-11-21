@@ -1,0 +1,30 @@
+
+[
+    {
+        "id": "R001",
+        "type": "railway",
+        "operator": "架空鉄道",
+        "line": "中央本線",
+        "section": "A駅～D駅",
+        "day_type": "平日",
+        "description": "平日ダイヤのサンプルデータ"
+    },
+    {
+        "id": "R002",
+        "type": "railway",
+        "operator": "架空鉄道",
+        "line": "東西線",
+        "section": "A駅～F駅",
+        "day_type": "土休日",
+        "description": "土休日ダイヤのサンプルデータ"
+    },
+    {
+        "id": "B001",
+        "type": "bus",
+        "operator": "架空バス",
+        "line": "市内循環線",
+        "section": "駅前～市役所",
+        "day_type": "平日",
+        "description": "市内循環バスのサンプルデータ"
+    }
+]
