@@ -1,83 +1,22 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transit Diagram Archive</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="..\css\style.css">
 </head>
 <body>
 
-<header>
-    <div class="logo">
-        TRANSIT <span>DIAGRAM</span> ARCHIVE
+    <h1>Diagrams Archive</h1>
+    <p>新たな乗換案内サイト</p>
+
+    <div>
+        <h2>路線一覧</h2>
+        <p>中央本線</p>
+        <p>東西線</p>
     </div>
-    <div class="system-status">
-        <span class="status-light"></span>
-        SYSTEM ONLINE
-    </div>
-</header>
 
-<div class="layout">
-
-    <aside>
-        <h3>MENU</h3>
-        <a href="index.html" class="active">DASHBOARD</a>
-        <a href="#railway">RAILWAY</a>
-        <a href="#bus">BUS</a>
-        <a href="#about">ABOUT</a>
-    </aside>
-
-    <main>
-        <section class="welcome">
-            <p class="subtitle">TRANSPORTATION DATA ARCHIVE</p>
-            <h1>DIAGRAM DATABASE</h1>
-            <p>鉄道・バス運行図表データベース</p>
-        </section>
-
-        <section class="search-area">
-            <input
-                type="text"
-                id="search"
-                placeholder="路線名・事業者名で検索..."
-            >
-        </section>
-
-        <section class="category">
-            <button class="selected" data-type="all">ALL</button>
-            <button data-type="railway">RAILWAY</button>
-            <button data-type="bus">BUS</button>
-        </section>
-
-        <section class="database">
-            <div class="section-title">
-                <h2>DIAGRAM LIST</h2>
-                <span id="count">LOADING...</span>
-            </div>
-
-            <div id="diagram-list" class="diagram-list">
-                <p>データを読み込んでいます...</p>
-            </div>
-        </section>
-
-        <section id="about" class="about">
-            <h2>ABOUT THIS SYSTEM</h2>
-            <p>
-                Transit Diagram Archiveは、
-                鉄道・バスの運行ダイヤを管理・閲覧する
-                データベースです。
-            </p>
-        </section>
-    </main>
-
-</div>
-
-<footer>
-    TRANSIT DIAGRAM ARCHIVE
-    <span>VERSION 1.0</span>
-</footer>
-
-<script src="js/main.js"></script>
+<script src="../js/main.js"></script>
 </body>
 </html>
